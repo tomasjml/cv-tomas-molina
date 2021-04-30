@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Overlock&display=swap");
 
+:root {
+  --green: #86ac77;
+  --green-lighter: #c1eeb3;
+}
+
 .App {
   font-family: "overlock", cursive;
   text-align: center;
@@ -20,4 +25,47 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.background {
+  z-index: -1;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--green);
+  background: -moz-linear-gradient(
+    top,
+    var(--green) 0%,
+    var(--green-lighter) 100%
+  ); /* FF3.6+ */
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0%, var(--green)),
+    color-stop(100%, var(--green-lighter))
+  ); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(
+    top,
+    var(--green) 0%,
+    var(--green-lighter) 100%
+  ); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(
+    top,
+    var(--green) 0%,
+    var(--green-lighter) 100%
+  ); /* Opera 11.10+ */
+  background: -ms-linear-gradient(
+    top,
+    var(--green) 0%,
+    var(--green-lighter) 100%
+  ); /* IE10+ */
+  background: linear-gradient(
+    to bottom,
+    var(--green) 0%,
+    var(--green-lighter) 100%
+  ); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=var(--green), endColorstr=var(--green-lighter),GradientType=0 ); /* IE6-9 */
 }
