@@ -12,24 +12,7 @@
 .App {
   font-family: "overlock", cursive;
   text-align: center;
-}
-
-html,
-body {
-  height: 100%;
-}
-
-body {
-  margin: 1%;
-  padding: 5%;
-  font-family: "overlock", cursive;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  display: flex;
 }
 
 .background {
@@ -148,6 +131,20 @@ code {
   transform: scale(0.95);
 }
 
+.row {
+  flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.col {
+  flex-direction: column;
+  display: flex;
+  flex-basis: 100%;
+  flex: 1;
+}
+
 h1 {
   margin: 5em 0;
   margin-bottom: 50px;
@@ -167,4 +164,22 @@ a {
 
 a:hover {
   border-bottom: 1px solid black;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 1%;
+  padding: 5%;
+  font-family: "overlock", cursive;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
 }

@@ -1,11 +1,12 @@
 import './App.css';
+import HeaderIdentification from './components/header-identification/HeaderIdentification';
 
 function App() {
+  const [name, dedication] = ["José Tomás Molina López", "Systems and Computing Engineer"]
   return (
     <div className="App">
       <div className="paper">
-        <h1>Tomas Molina</h1>
-        <h2>System and Software Engineer</h2>
+        <HeaderIdentification name={name} dedication={dedication}/>
       </div>
     </div>
   );
