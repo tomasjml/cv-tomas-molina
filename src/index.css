@@ -1,8 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Overlock&display=swap");
 
 :root {
-  --green: #86ac77;
-  --green-lighter: #c1eeb3;
+  --green: #8fa153;
+  --green-lighter: #c6d499;
+  --green-darker: #296433;
+  --white: #e8e8ea;
+  --white-lighter: #efefef;
+  --white-light: #f5f5f7;
 }
 
 .App {
@@ -16,7 +20,8 @@ body {
 }
 
 body {
-  margin: 0;
+  margin: 1%;
+  padding: 5%;
   font-family: "overlock", cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -68,4 +73,98 @@ code {
     var(--green-lighter) 100%
   ); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=var(--green), endColorstr=var(--green-lighter),GradientType=0 ); /* IE6-9 */
+}
+
+.paper {
+  width: 85%;
+  height: 40em;
+
+  background: var(--white);
+  background: -moz-linear-gradient(
+    top,
+    var(--white) 0%,
+    var(--white-lighter) 100%
+  ); /* FF3.6+ */
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0%, var(--white)),
+    color-stop(100%, var(--white-lighter))
+  ); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(
+    top,
+    var(--white) 0%,
+    var(--white-lighter) 100%
+  ); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(
+    top,
+    var(--white) 0%,
+    var(--white-lighter) 100%
+  ); /* Opera 11.10+ */
+  background: -ms-linear-gradient(
+    top,
+    var(--white) 0%,
+    var(--white-lighter) 100%
+  ); /* IE10+ */
+  background: linear-gradient(
+    to bottom,
+    var(--white) 0%,
+    var(--white-lighter) 100%
+  ); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8e8ea', endColorstr='#efefef',GradientType=0 ); /* IE6-9 */
+
+  margin: auto;
+
+  border-radius: 2px;
+  border-left: 2px solid #f5f5f7;
+  border-bottom: 2px solid #f5f5f7;
+  border-right: 1px solid var(--green-darker);
+  border-top: 1px solid #f4f4f6;
+
+  box-shadow: 0 0 2px 0 #f4f4f6 inset,
+    0em 100px 500px -5px rgba(255, 255, 255, 0.5),
+    -1em 1em 3em 1em rgba(255, 255, 255, 0.2),
+    -5em 1em 30em 1em rgba(255, 255, 255, 0.2),
+    0em 2px 0 rgba(255, 255, 255, 0.7),
+    0em 10px 50px -10px rgba(255, 255, 255, 1),
+    1.2em -0.8em 2em 0em var(--green-darker),
+    5.5em -1em 50em 0em var(--green-darker),
+    0px -5px 25px 0px var(--green-lighter);
+
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.paper:hover {
+  -webkit-transform: scale(0.95);
+  -moz-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  -o-transform: scale(0.95);
+  transform: scale(0.95);
+}
+
+h1 {
+  margin: 5em 0;
+  margin-bottom: 50px;
+  color: #111;
+  font-weight: normal;
+  text-align: center;
+  text-shadow: 0 0px 20px #eee;
+}
+
+a {
+  text-decoration: none;
+  color: #ff0066;
+  transition: all 0.5s ease;
+  display: inline-block;
+  border-bottom: 1px solid white;
+}
+
+a:hover {
+  border-bottom: 1px solid black;
 }
