@@ -8,6 +8,7 @@ import CareerInfo from "./components/career-info/CareerInfo";
 import BirthInfo from "./components/birth-info/BirthInfo";
 import SkillsInfo from "./components/skills-info/SkillsInfo";
 import ExtraDetails from "./components/extra-details/ExtraDetails"
+import EducationalInfo from "./components/educational-info/EducationalInfo";
 
 // Resources
 import tomasMolina from "./images/jotate.jpg";
@@ -78,6 +79,46 @@ function App() {
     ["Creativity", "Communication", "Teamwork", "Adaptability", "Critical Thinking", "Leadership", "Organized"]
   ]
   const detailsData = "Musician - Signer, gamer, and Basketball Lover.";
+  const educationalData = [
+    {
+      "organization": "Pontificia Universidad Católica Madre y Maestra (PUCMM)",
+      "initialDate": "2015",
+      "finalDate": "2021",
+      "degree": "Systems and Computing Engineering Degree",
+      "tasks": [
+        "Secretary for the PUCMM Systems Engineering Student Committee",
+        "Member of the Arts and Culture department groups \"LaTuna\" and \"Melody\" as Musician"
+      ]
+    },
+    {
+      "organization": "California Institute of the Arts",
+      "initialDate": "2016",
+      "finalDate": "2016",
+      "degree": "Course, Fundamentals of Graphic Design",
+      "tasks": []
+    },
+    {
+      "organization": "LinkedIn Learning - License & Certifications",
+      "initialDate": "2016",
+      "finalDate": "2016",
+      "degree": "JavaScript Essential Training",
+      "tasks": []
+    },
+    {
+      "organization": "LinkedIn Learning - License & Certifications",
+      "initialDate": "2016",
+      "finalDate": "2016",
+      "degree": "React.js Essential Training",
+      "tasks": []
+    },
+    {
+      "organization": "LinkedIn Learning - License & Certifications",
+      "initialDate": "2016",
+      "finalDate": "2016",
+      "degree": "React Hooks",
+      "tasks": []
+    }
+  ]
 
   return (
     <div className="App">
@@ -93,6 +134,7 @@ function App() {
           </div>
           <div className="col">
             <CareerInfo careerData={careerData}/>
+            <EducationalInfo educationalData={educationalData}/>
           </div>
         </div>
       </div>
