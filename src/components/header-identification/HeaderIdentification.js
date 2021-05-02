@@ -9,7 +9,7 @@ const HeaderIdentification = ({name, dedication, yourImage}) => {
                 </div>
                 <div className="col">
                     <h1>{name}</h1>
-                    <h2>{dedication}</h2>
+                    <h1>{dedication}</h1>
                 </div>
             </div>
         </header>
