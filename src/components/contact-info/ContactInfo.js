@@ -1,14 +1,14 @@
 import React from 'react';
 
-const ContactInfo = ({cellphone, email, address, linkedin, github}) => {
+const ContactInfo = ({contactData, cellphone, email, address, linkedin, github}) => {
     return (
         <>
             <ul>
-                <li>Cell: {cellphone}</li>
-                <li>Email: {email}</li>
-                <li>Address: {address}</li>
-                <li>LinkedIn: {linkedin}</li>
-                <li>Github: {github}</li>
+                {Object.keys(contactData).map((dataKey) => {
+                    return(
+                        <li key={dataKey}>{dataKey}: {contactData[dataKey]}</li>
+                    )
+                })}
             </ul>
         </>
     );

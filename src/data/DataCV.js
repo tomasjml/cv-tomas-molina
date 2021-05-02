@@ -6,6 +6,15 @@ export const [cellphone, email, address, linkedin, github] = [
     "https://www.linkedin.com/in/tomas-molina-/",
     "https://github.com/jtmlmass"
   ]
+
+export const contactData = {
+    "cellphone": "829 527 2702",
+    "email": "jtml.mass@gmail.com",
+    "address": "La Zursa ll, C5 St. #5. Santiago, Dominican Republic",
+    "linkedin": "https://www.linkedin.com/in/tomas-molina-/",
+    "github":  "https://github.com/jtmlmass"
+}
+
 export const [profileDescription] = ["Hardworking. Able to effectively self-manage during independent projects, as well as collaborate as part of a productive team. I found a great love for computers as a child when I saw my grandfather in his 60s in a Microsoft Office course for its great utility. Seeing as still his age, he tried to adapt to technology to see how to simplify his tasks by performing them in a simpler and more efficient way"]
 export const careerData = [
     {

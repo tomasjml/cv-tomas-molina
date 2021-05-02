@@ -12,11 +12,7 @@ import EducationalInfo from "./components/educational-info/EducationalInfo";
 import {
   name,
   dedication,
-  cellphone,
-  email,
-  address,
-  linkedin,
-  github,
+  contactData,
   profileDescription,
   careerData,
   birthDate, birthPlace,
@@ -33,7 +29,7 @@ function App() {
     <div className="App">
       <div className="paper">
         <HeaderIdentification name={name} dedication={dedication} yourImage={tomasMolina}/>
-        <ContactInfo cellphone={cellphone} email={email} address={address} linkedin={linkedin} github={github}/>
+        <ContactInfo contactData={contactData} />
         <div className="row">
           <div className="col">
             <ProfileInfo info={profileDescription}/>
