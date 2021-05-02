@@ -132,11 +132,12 @@
 }
 
 .row {
-  margin: 0.15em;
   flex-direction: row;
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  align-items: center;
+  justify-content: center;
 }
 
 .col {
@@ -144,6 +145,8 @@
   display: flex;
   flex-basis: 100%;
   flex: 1;
+  align-items: center;
+  justify-content: center;
 }
 
 h1 {

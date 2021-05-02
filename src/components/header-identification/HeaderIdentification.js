@@ -5,7 +5,7 @@ const HeaderIdentification = ({name, dedication, yourImage}) => {
         <header>
             <div className="row">
                 <div className="col">
-                    <img src={yourImage} alt={"A picture of: " + name}/>
+                    <img src={yourImage} alt={"A picture of: " + name} width="150" height="200"/>
                 </div>
                 <div className="col">
                     <h1>{name}</h1>
