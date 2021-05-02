@@ -7,6 +7,7 @@ import ProfileInfo from "./components/profile-info/ProfileInfo";
 import CareerInfo from "./components/career-info/CareerInfo";
 import BirthInfo from "./components/birth-info/BirthInfo";
 import SkillsInfo from "./components/skills-info/SkillsInfo";
+import ExtraDetails from "./components/extra-details/ExtraDetails"
 
 // Resources
 import tomasMolina from "./images/jotate.jpg";
@@ -76,7 +77,7 @@ function App() {
     ],
     ["Creativity", "Communication", "Teamwork", "Adaptability", "Critical Thinking", "Leadership", "Organized"]
   ]
-
+  const detailsData = "Musician - Signer, gamer, and Basketball Lover.";
 
   return (
     <div className="App">
@@ -86,12 +87,9 @@ function App() {
         <div className="row">
           <div className="col">
             <ProfileInfo info={profileDescription}/>
-            <div className="col">
-              <BirthInfo birthDate={birthDate} birthPlace={birthPlace}/>
-            </div>
-            <div className="col">
-              <SkillsInfo codingData={codingData.join(", ")} frameData={frameData} passiveData={passiveData.join(", ")}/>
-            </div>
+            <BirthInfo birthDate={birthDate} birthPlace={birthPlace}/>
+            <SkillsInfo codingData={codingData.join(", ")} frameData={frameData} passiveData={passiveData.join(", ")}/>
+            <ExtraDetails detailsData={detailsData} />
           </div>
           <div className="col">
             <CareerInfo careerData={careerData}/>
