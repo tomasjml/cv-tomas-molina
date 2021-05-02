@@ -6,6 +6,7 @@ import ContactInfo from "./components/contact-info/ContactInfo";
 import ProfileInfo from "./components/profile-info/ProfileInfo";
 import CareerInfo from "./components/career-info/CareerInfo";
 import BirthInfo from "./components/birth-info/BirthInfo";
+import SkillsInfo from "./components/skills-info/SkillsInfo";
 
 // Resources
 import tomasMolina from "./images/jotate.jpg";
@@ -53,6 +54,29 @@ function App() {
     }
   ]
   const [birthDate, birthPlace] = ["27 of February, 1996", "La Vega, Dominican Republic"]
+  const [codingData, frameData, passiveData] = [
+    ["JavaScript", "HTML", "CSS", "Java", "Python", "SQL", "MySQL", "MongoDB"],
+    [
+      {
+        "language" : "JavaScript",
+        "frameworks": ["ReactJS", "NodeJS", "LoopBack", "Express"]
+      },
+      {
+        "language" : "Java",
+        "frameworks": ["Vaadin", "Hibernate/JPA", "Springboot"]
+      },
+      {
+        "language" : "Python",
+        "frameworks": ["Django REST", "Flask"]
+      },
+      {
+        "language" : "General",
+        "frameworks": ["Git", "Docker", "MVC", "Figma", "Postman", "VS Code"]
+      }
+    ],
+    ["Creativity", "Communication", "Teamwork", "Adaptability", "Critical Thinking", "Leadership", "Organized"]
+  ]
+
 
   return (
     <div className="App">
@@ -64,6 +88,9 @@ function App() {
             <ProfileInfo info={profileDescription}/>
             <div className="col">
               <BirthInfo birthDate={birthDate} birthPlace={birthPlace}/>
+            </div>
+            <div className="col">
+              <SkillsInfo codingData={codingData.join(", ")} frameData={frameData} passiveData={passiveData}/>
             </div>
           </div>
           <div className="col">
