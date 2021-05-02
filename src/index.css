@@ -132,6 +132,7 @@
 }
 
 .row {
+  margin: 0.15em;
   flex-direction: row;
   display: flex;
   flex-wrap: wrap;
