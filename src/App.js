@@ -5,6 +5,7 @@ import HeaderIdentification from './components/header-identification/HeaderIdent
 import ContactInfo from "./components/contact-info/ContactInfo";
 import ProfileInfo from "./components/profile-info/ProfileInfo";
 import CareerInfo from "./components/career-info/CareerInfo";
+import BirthInfo from "./components/birth-info/BirthInfo";
 
 // Resources
 import tomasMolina from "./images/jotate.jpg";
@@ -51,6 +52,7 @@ function App() {
       ]
     }
   ]
+  const [birthDate, birthPlace] = ["27 of February, 1996", "La Vega, Dominican Republic"]
 
   return (
     <div className="App">
@@ -60,12 +62,14 @@ function App() {
         <div className="row">
           <div className="col">
             <ProfileInfo info={profileDescription}/>
+            <div className="col">
+              <BirthInfo birthDate={birthDate} birthPlace={birthPlace}/>
+            </div>
           </div>
           <div className="col">
             <CareerInfo careerData={careerData}/>
           </div>
         </div>
-        
       </div>
     </div>
   );
