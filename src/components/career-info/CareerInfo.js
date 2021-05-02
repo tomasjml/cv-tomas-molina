@@ -6,7 +6,7 @@ const CareerInfo = ({careerData}) => {
             <h3>Career Summary</h3>
             {careerData.map((job) => {
                 return (
-                    <>
+                    <div key={job.position}>
                         <div className="row">
                             <div className="col">
                                 <h5>{job.position}</h5>
@@ -17,14 +17,14 @@ const CareerInfo = ({careerData}) => {
                         </div>
                         <div className="row">
                             <ul>
-                                {job.tasks.map((task) => {
+                                {job.tasks.map((task, i) => {
                                     return (
-                                        <li>{task}</li>
+                                        <li key={i}>{task}</li>
                                     )
                                 })}
                             </ul>
                         </div>
-                    </>
+                    </div>
                 )
             })}
         </>
