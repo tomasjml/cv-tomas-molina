@@ -1,11 +1,4 @@
 export const [name, dedication] = ["José Tomás Molina López", "Systems and Computing Engineer"]
-export const [cellphone, email, address, linkedin, github] = [
-    "829 572 2702",
-    "jtml.mass@gmail.com",
-    "La Zursa ll, C5 St. #5. Santiago, Dominican Republic",
-    "https://www.linkedin.com/in/tomas-molina-/",
-    "https://github.com/jtmlmass"
-  ]
 
 export const contactData = {
     "cellphone": "829 527 2702",
