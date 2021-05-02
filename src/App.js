@@ -90,7 +90,7 @@ function App() {
               <BirthInfo birthDate={birthDate} birthPlace={birthPlace}/>
             </div>
             <div className="col">
-              <SkillsInfo codingData={codingData.join(", ")} frameData={frameData} passiveData={passiveData}/>
+              <SkillsInfo codingData={codingData.join(", ")} frameData={frameData} passiveData={passiveData.join(", ")}/>
             </div>
           </div>
           <div className="col">
