@@ -4,6 +4,8 @@
   --green: #8fa153;
   --green-lighter: #c6d499;
   --green-darker: #296433;
+  --brown: #bb8867;
+  --brown-darker: #83624c;
   --white: #e8e8ea;
   --white-lighter: #efefef;
   --white-light: #f5f5f7;
@@ -152,10 +154,17 @@
 h1 {
   margin: 5em 0;
   margin-bottom: 50px;
-  color: #111;
+  color: var(--brown-darker);
   font-weight: normal;
   text-align: center;
   text-shadow: 0 0px 20px #eee;
+}
+
+h2,
+h3,
+h4,
+h5 {
+  color: var(--brown);
 }
 
 a {
