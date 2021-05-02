@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ContactInfo = ({contactData, cellphone, email, address, linkedin, github}) => {
+const ContactInfo = ({contactData}) => {
     return (
         <>
             <ul>
