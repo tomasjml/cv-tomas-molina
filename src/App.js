@@ -30,19 +30,13 @@ function App() {
       <div className="paper">
         <HeaderIdentification name={name} dedication={dedication} yourImage={tomasMolina}/>
         <ContactInfo contactData={contactData} />
-        <div className="row">
-          <div className="col">
-            <ProfileInfo info={profileDescription}/>
-            <BirthInfo birthDate={birthDate} birthPlace={birthPlace}/>
-            <SkillsInfo codingData={codingData.join(", ")} frameData={frameData} passiveData={passiveData.join(", ")}/>
-            <ExtraDetails detailsData={detailsData} />
-          </div>
-          <div className="col">
-            <CareerInfo careerData={careerData}/>
-            <EducationalInfo educationalData={educationalData}/>
-          </div>
-        </div>
-      </div>
+        <ProfileInfo info={profileDescription}/>
+        <BirthInfo birthDate={birthDate} birthPlace={birthPlace}/>
+        <SkillsInfo codingData={codingData.join(", ")} frameData={frameData} passiveData={passiveData.join(", ")}/>
+        <ExtraDetails detailsData={detailsData} />
+        <CareerInfo careerData={careerData}/>
+        <EducationalInfo educationalData={educationalData}/>
+      </div>                                                      
     </div>
   );
 }

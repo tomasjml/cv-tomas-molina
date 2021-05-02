@@ -6,7 +6,7 @@
   --green-darker: #296433;
   --brown: #bb8867;
   --brown-darker: #83624c;
-  --white: #e8e8ea;
+  --white: #eeeef0;
   --white-lighter: #efefef;
   --white-light: #f5f5f7;
 }
@@ -62,7 +62,7 @@
 
 .paper {
   width: 85%;
-  height: 85%;
+  height: 90%;
 
   background: var(--white);
   background: -moz-linear-gradient(
@@ -134,21 +134,33 @@
 }
 
 .row {
-  flex-direction: row;
   display: flex;
-  flex-wrap: wrap;
-  width: 100%;
   align-items: center;
   justify-content: center;
+  /* You can set flex-wrap and
+      flex-direction individually */
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* Or do it all in one line
+     with flex flow */
+  flex-flow: row wrap;
+  /* tweak where items line
+      up on the row
+      valid values are: flex-start,
+      flex-end, space-between,
+      space-around, stretch */
+  align-content: flex-end;
+  width: 100%;
 }
 
 .col {
-  flex-direction: column;
   display: flex;
-  flex-basis: 100%;
-  flex: 1;
   align-items: center;
   justify-content: center;
+  flex-flow: column wrap;
+  align-content: stretch;
+  margin: 3%;
+  padding: 0.5%;
 }
 
 h1 {
