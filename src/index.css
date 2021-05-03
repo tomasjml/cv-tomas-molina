@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Overlock&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
 
 :root {
-  --green: #8fa153;
-  --green-lighter: #c6d499;
-  --green-darker: #296433;
+  --green: #a9e1af;
+  --green-lighter: #dcf5df;
+  --green-darker: #80a885;
   --brown: #bb8867;
   --brown-darker: #83624c;
   --white: #eeeef0;
@@ -13,14 +13,14 @@
 }
 
 .App {
-  font-family: "overlock", cursive;
+  font-family: "Ubuntu Mono", monospace;
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
   grid-auto-rows: minmax(150px, auto);
 }
 
 .background {
-  z-index: -1;
+  z-index: -5;
   position: relative;
   top: 0;
   left: 0;
