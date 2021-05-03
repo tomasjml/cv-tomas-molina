@@ -7,8 +7,8 @@
     /* The second layer shadow */ 20px 20px 1px -4px rgba(0, 0, 0, 0.15);
   /* Padding for demo purposes */
   /* padding: 1em; */
-  height: 8em;
-  width: 32em;
+  height: 15%;
+  width: 50%;
   border-color: var(--brown);
   border-radius: 0.3em;
 }

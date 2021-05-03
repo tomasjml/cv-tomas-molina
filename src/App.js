@@ -2,7 +2,6 @@ import './App.css';
 
 // Components
 import IdentificationInfo from "./components/identification-info/IdentificationInfo.js";
-import ContactInfo from "./components/contact-info/ContactInfo";
 import ProfileInfo from "./components/profile-info/ProfileInfo";
 import CareerInfo from "./components/career-info/CareerInfo";
 import BirthInfo from "./components/birth-info/BirthInfo";
@@ -12,7 +11,6 @@ import EducationalInfo from "./components/educational-info/EducationalInfo";
 import {
   name,
   dedication,
-  contactData,
   profileDescription,
   careerData,
   birthDate, birthPlace,
@@ -28,11 +26,8 @@ function App() {
   return (
     <div className="App">
       <div className="paper">
-        <div class="row">
-          <IdentificationInfo name={name} dedication={dedication} yourImage={tomasMolina}/>
-        </div>
         <div className="row">
-          <ContactInfo contactData={contactData} />
+          <IdentificationInfo name={name} dedication={dedication} yourImage={tomasMolina}/>
         </div>
         <div className="row">
           <ProfileInfo info={profileDescription}/>

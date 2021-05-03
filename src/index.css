@@ -3,6 +3,7 @@
 :root {
   /* Colors */
   --green: #a9e1af;
+  --green-transparent: #a9e1af56;
   --green-lighter: #dcf5df;
   --green-darker: #87b88c;
   --brown: #bb8867;
@@ -19,9 +20,29 @@
 
 .App {
   font-family: "Ubuntu Mono", monospace;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
-  grid-auto-rows: minmax(150px, auto);
+  align-items: center;
+  display: grid;
+}
+
+.info {
+  background: var(--green-transparent);
+  background-color: var(--green-transparent);
+  box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.15);
+  border-radius: 0.3em;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.info:hover {
+  -webkit-transform: scale(var(--hover-outside-sm));
+  -moz-transform: scale(var(--hover-outside-sm));
+  -ms-transform: scale(var(--hover-outside-sm));
+  -o-transform: scale(var(--hover-outside-sm));
+  transform: scale(var(--hover-outside-sm));
 }
 
 .background {
@@ -162,6 +183,7 @@ ul,
 li {
   font-size: 1em;
   color: var(--black);
+  text-align: justify;
 }
 
 a {

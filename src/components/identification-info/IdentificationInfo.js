@@ -7,13 +7,17 @@ import {
 
 const IdentificationInfo = ({name, dedication, yourImage}) => {
     return (
-        <header className="justify__content__center width__lg">
+        <header className="info justify__content__center">
             <div className="avatar">
                 <img src={yourImage} alt={"A picture of: " + name} width="200" height="215"/>
             </div>
             <div className="terminal">
-                <h1>{name}</h1>
-                <h1>{dedication}</h1>
+                <div className="row">
+                    <h1>{name}</h1>
+                </div>
+                <div className="row">
+                    <h1>{dedication}</h1>
+                </div>
             </div>
             <ContactInfo contactData={contactData} />
         </header>
