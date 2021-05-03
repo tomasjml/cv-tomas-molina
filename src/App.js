@@ -1,7 +1,7 @@
 import './App.css';
 
 // Components
-import HeaderIdentification from './components/header-identification/HeaderIdentification';
+import IdentificationInfo from "./components/identification-info/IdentificationInfo.js";
 import ContactInfo from "./components/contact-info/ContactInfo";
 import ProfileInfo from "./components/profile-info/ProfileInfo";
 import CareerInfo from "./components/career-info/CareerInfo";
@@ -29,7 +29,7 @@ function App() {
     <div className="App">
       <div className="paper">
         <div class="row">
-          <HeaderIdentification name={name} dedication={dedication} yourImage={tomasMolina}/>
+          <IdentificationInfo name={name} dedication={dedication} yourImage={tomasMolina}/>
         </div>
         <div className="row">
           <ContactInfo contactData={contactData} />

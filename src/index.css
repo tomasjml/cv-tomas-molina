@@ -65,6 +65,7 @@
 .paper {
   width: 85%;
   height: 90%;
+  padding: 1em;
 
   background: var(--white);
   background: -moz-linear-gradient(
@@ -193,18 +194,18 @@ code {
   justify-content: center;
 }
 
-.info__sm {
+.width__sm {
   width: 540px;
 }
 
-.info__md {
+.width__md {
   width: 720px;
 }
 
-.info__lg {
+.width__lg {
   width: 960px;
 }
 
-.info__xl {
+.width__xl {
   width: 1140px;
 }
