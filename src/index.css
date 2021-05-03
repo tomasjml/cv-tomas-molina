@@ -1,15 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
 
 :root {
+  /* Colors */
   --green: #a9e1af;
   --green-lighter: #dcf5df;
-  --green-darker: #80a885;
+  --green-darker: #87b88c;
   --brown: #bb8867;
   --brown-darker: #83624c;
   --white: #eeeef0;
   --white-lighter: #efefef;
   --white-light: #f5f5f7;
+  --black: #201f1fd7;
+
+  /* Effects */
   --hover-inside-sm: 0.98;
+  --hover-outside-sm: 1.05;
 }
 
 .App {
@@ -20,7 +25,7 @@
 }
 
 .background {
-  z-index: -5;
+  z-index: -10;
   position: relative;
   top: 0;
   left: 0;
@@ -100,7 +105,7 @@
     var(--white) 0%,
     var(--white-lighter) 100%
   ); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8e8ea', endColorstr='#efefef',GradientType=0 ); /* IE6-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=var(--green), endColorstr=var(--green-lighter),GradientType=0 ); /* IE6-9 */
 
   margin: auto;
 
@@ -139,7 +144,7 @@
 h1 {
   margin: 5em 0;
   margin-bottom: 50px;
-  color: var(--brown-darker);
+  color: var(--black);
   font-weight: normal;
   text-align: center;
   text-shadow: 0 0px 20px #eee;
@@ -150,6 +155,13 @@ h3,
 h4,
 h5 {
   color: var(--brown);
+}
+
+p,
+ul,
+li {
+  font-size: 1em;
+  color: var(--black);
 }
 
 a {
@@ -172,7 +184,7 @@ body {
 body {
   margin: 1%;
   padding: 5%;
-  font-family: "overlock", cursive;
+  font-family: "Ubuntu Mono", monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -195,17 +207,21 @@ code {
 }
 
 .width__sm {
-  width: 540px;
+  width: 34em;
 }
 
 .width__md {
-  width: 720px;
+  width: 45px;
 }
 
 .width__lg {
-  width: 960px;
+  width: 60px;
 }
 
 .width__xl {
-  width: 1140px;
+  width: 70px;
+}
+
+.text--black {
+  color: black;
 }

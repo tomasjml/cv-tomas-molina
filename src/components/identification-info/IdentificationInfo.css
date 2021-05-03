@@ -11,3 +11,22 @@
   width: 32em;
   border-color: var(--brown);
 }
+
+.avatar,
+.terminal {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.terminal:hover,
+.avatar:hover {
+  -webkit-transform: scale(var(--hover-outside-sm));
+  -moz-transform: scale(var(--hover-outside-sm));
+  -ms-transform: scale(var(--hover-outside-sm));
+  -o-transform: scale(var(--hover-outside-sm));
+  transform: scale(var(--hover-outside-sm));
+}
