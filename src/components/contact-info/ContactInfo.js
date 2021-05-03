@@ -2,7 +2,7 @@ import React from 'react';
 
 const ContactInfo = ({contactData}) => {
     return (
-        <>
+        <div className="info">
             <h2>How to reach me</h2>
             <ul>
                 {Object.keys(contactData).map((dataKey) => {
@@ -11,7 +11,7 @@ const ContactInfo = ({contactData}) => {
                     )
                 })}
             </ul>
-        </>
+        </div>
     );
 }
  

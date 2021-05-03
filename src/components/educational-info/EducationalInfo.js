@@ -2,7 +2,7 @@ import React from 'react';
 
 const EducationalInfo = ({educationalData}) => {
     return ( 
-        <>
+        <div className="info">
             <h3>Educational Training</h3>
             {educationalData.map((education) => {
                 return (
@@ -34,7 +34,7 @@ const EducationalInfo = ({educationalData}) => {
                     </div>
                 )
             })}
-        </>
+        </div>
      );
 }
  

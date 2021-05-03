@@ -2,7 +2,7 @@ import React from 'react';
 
 const SkillsInfo = ({codingData, frameData, passiveData}) => {
     return ( 
-        <>
+        <div className="info">
             <h3>Skills</h3>
             <div className="row">
                 <div className="col">
@@ -31,7 +31,7 @@ const SkillsInfo = ({codingData, frameData, passiveData}) => {
                     </u>
                 </div>
             </div>
-        </>
+        </div>
      );
 }
  
