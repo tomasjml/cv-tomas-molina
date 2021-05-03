@@ -7,7 +7,7 @@ import {
 
 const IdentificationInfo = ({name, dedication, yourImage}) => {
     return (
-        <header className="justify__content__center width__md">
+        <header className="justify__content__center width__lg">
             <div className="avatar">
                 <img src={yourImage} alt={"A picture of: " + name} width="200" height="215"/>
             </div>
