@@ -28,14 +28,20 @@ function App() {
   return (
     <div className="App">
       <div className="paper">
-        <HeaderIdentification name={name} dedication={dedication} yourImage={tomasMolina}/>
-        <ContactInfo contactData={contactData} />
-        <ProfileInfo info={profileDescription}/>
-        <BirthInfo birthDate={birthDate} birthPlace={birthPlace}/>
-        <SkillsInfo codingData={codingData.join(", ")} frameData={frameData} passiveData={passiveData.join(", ")}/>
-        <ExtraDetails detailsData={detailsData} />
-        <CareerInfo careerData={careerData}/>
-        <EducationalInfo educationalData={educationalData}/>
+        <div class="row">
+          <HeaderIdentification name={name} dedication={dedication} yourImage={tomasMolina}/>
+        </div>
+        <div className="row">
+          <ContactInfo contactData={contactData} />
+        </div>
+        <div className="row">
+          <ProfileInfo info={profileDescription}/>
+          <BirthInfo birthDate={birthDate} birthPlace={birthPlace}/>
+          <SkillsInfo codingData={codingData.join(", ")} frameData={frameData} passiveData={passiveData.join(", ")}/>
+          <ExtraDetails detailsData={detailsData} />
+          <CareerInfo careerData={careerData}/>
+          <EducationalInfo educationalData={educationalData}/>
+        </div>
       </div>                                                      
     </div>
   );
