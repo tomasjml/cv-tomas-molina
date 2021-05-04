@@ -1,4 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
+@media (min-width: 750px) {
+  .paper__body {
+    column-count: 1;
+    column-gap: 0.3em;
+  }
+
+  .paper {
+    break-inside: avoid;
+  }
+}
+
+@media (min-width: 960px) {
+  .paper__body {
+    column-count: 2;
+    column-gap: 0.3em;
+  }
+}
 
 :root {
   /* Colors */
@@ -26,7 +43,7 @@
 }
 
 .info {
-  box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.062);
+  box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.199);
   border-radius: var(--border-radius-sm);
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
@@ -39,6 +56,7 @@
   margin: 2m auto;
   display: grid;
   grid-gap: 1em;
+  border-radius: var(--boder-radius-sm);
 }
 
 .info__primary {
@@ -113,7 +131,6 @@
   padding: 1em;
 
   border-radius: var(--border-radius-sm);
-
   background: var(--white);
   background: -moz-linear-gradient(
     top,
@@ -182,6 +199,12 @@
   -o-transform: scale(var(--hover-inside-sm));
   transform: scale(var(--hover-inside-sm));
 }
+.paper__header {
+  width: 100%;
+}
+.paper__body {
+  width: 100%;
+}
 
 h1 {
   margin: 0.5em auto;
@@ -189,12 +212,14 @@ h1 {
   font-weight: normal;
   text-align: center;
   text-shadow: 0 0px 20px #eee;
+  font-size: 2em;
 }
 
 h2,
 h3,
 h4,
 h5 {
+  font-size: 1.5em;
   color: var(--brown);
 }
 
