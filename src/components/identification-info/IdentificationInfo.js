@@ -7,13 +7,23 @@ import {
 
 const IdentificationInfo = ({name, dedication, yourImage}) => {
     return (
-        <header className="info info__primary green-transparent">
-            <img src={yourImage} alt={"A picture of: " + name} width="200" height="215" className="avatar"/>
-            <div className="terminal">
-                <h1>{name}</h1>
-                <h1>{dedication}</h1>
+        <header className="info info__primary green-transparent justify-content-center">
+            <div className="row">
+                <div className="col"> 
+                    <img src={yourImage} alt={"A picture of: " + name} width="200" height="215" className="avatar"/>
+                </div>
+                <div className="col">
+                    <div className="terminal">
+                        <h1>{name}</h1>
+                        <h1>{dedication}</h1>
+                    </div>
+                </div>
             </div>
-            <ContactInfo contactData={contactData} />
+            <div className="row">
+                <div className="col">
+                    <ContactInfo contactData={contactData} />
+                </div>
+            </div>
         </header>
     );
 }
