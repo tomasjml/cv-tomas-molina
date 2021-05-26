@@ -24,20 +24,24 @@ import tomasMolina from "./images/jotate.jpg";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App container-lg">
       <div className="paper">
         <div className="paper__header">
-          <IdentificationInfo name={name} dedication={dedication} yourImage={tomasMolina}/>
+          <div class="row">
+            <IdentificationInfo name={name} dedication={dedication} yourImage={tomasMolina}/>
+          </div>
         </div>
         <div className="paper__body">
-          <ProfileInfo info={profileDescription}/>
+          <div class="row">
+           <ProfileInfo info={profileDescription}/>
+          </div>
           <BirthInfo birthDate={birthDate} birthPlace={birthPlace}/>
           <SkillsInfo codingData={codingData.join(", ")} frameData={frameData} passiveData={passiveData.join(", ")}/>
           <ExtraDetails detailsData={detailsData} />
           <CareerInfo careerData={careerData}/>
           <EducationalInfo educationalData={educationalData}/>
         </div>
-      </div>                                                      
+      </div>                                                  
     </div>
   );
 }
