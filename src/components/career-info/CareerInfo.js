@@ -2,7 +2,7 @@ import React from 'react';
 
 const CareerInfo = ({careerData}) => {
     return ( 
-        <>
+        <div className="info info__secundary">
             <h3>Career Summary</h3>
             {careerData.map((job) => {
                 return (
@@ -27,7 +27,7 @@ const CareerInfo = ({careerData}) => {
                     </div>
                 )
             })}
-        </>
+        </div>
      );
 }
  

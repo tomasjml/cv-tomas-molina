@@ -1,0 +1,40 @@
+.terminal {
+  background: var(--green);
+  background-color: var(--green);
+  box-shadow:
+      /* The top layer shadow */ 0 -1px 5px rgba(0, 0, 0, 0.15),
+    /* The second layer */ 12px 20px 25px -5px var(--green-darker),
+    /* The second layer shadow */ 12px 20px 1px -4px rgba(0, 0, 0, 0.15);
+  /* Padding for demo purposes */
+  /* padding: 1em; */
+  border-color: var(--brown);
+  border-radius: var(--boder-radius-sm);
+  padding: 0.3em;
+}
+
+.avatar {
+  box-shadow: 10px 10px 1px -4px rgba(0, 0, 0, 0.15);
+}
+
+.avatar,
+.terminal {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.terminal:hover,
+.avatar:hover {
+  -webkit-transform: scale(var(--hover-outside-sm));
+  -moz-transform: scale(var(--hover-outside-sm));
+  -ms-transform: scale(var(--hover-outside-sm));
+  -o-transform: scale(var(--hover-outside-sm));
+  transform: scale(var(--hover-outside-sm));
+}
+
+.paper__header__row {
+  width: 100%;
+}
