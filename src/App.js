@@ -32,12 +32,8 @@ function App() {
     <div className="container-lg">
       <div className="row align-items-center">
         <div className="col">
-          <div className="paper m-4">
-            <div className="row justify-content-md-center m-3">
-                <div className="col-9">
-                  <IdentificationInfo name={name} dedication={dedication} yourImage={tomasMolina}/>
-                </div>
-            </div>
+          <div className="paper m-3">
+              <IdentificationInfo name={name} dedication={dedication} yourImage={tomasMolina}/>
             <div className="row justify-content-md-center">
                 <div className="col">'
                   <div className="row m-3">

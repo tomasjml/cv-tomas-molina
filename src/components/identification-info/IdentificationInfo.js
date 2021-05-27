@@ -8,11 +8,11 @@ import {
 const IdentificationInfo = ({name, dedication, yourImage}) => {
     return (
         <header className="info green-transparent">
-            <div className="row align-items-center">
-                <div className="col col-3 m-3"> 
-                    <img src={yourImage} alt={"A picture of: " + name}  className="avatar img-fluid img-thumbnail float-end w-100"/>
+            <div className="row">
+                <div className="col p-5"> 
+                    <img src={yourImage} alt={"A picture of: " + name}  className="avatar img-fluid img-thumbnail float-end w-50"/>
                 </div>
-                <div className="col col-7 m-3">
+                <div className="col p-5">
                     <div className="mb-4">
                         <div className="terminal text-center">
                             <h1 className="fs-2 p-2">{name}</h1>
