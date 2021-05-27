@@ -159,14 +159,12 @@ h1 {
   margin: 0.5em auto;
   color: var(--black);
   text-shadow: 0 0px 20px #eee;
-  font-size: 2em;
 }
 
 h2,
 h3,
 h4,
 h5 {
-  font-size: 1.5em;
   color: var(--brown);
 }
 
