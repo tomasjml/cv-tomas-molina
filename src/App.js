@@ -25,10 +25,10 @@ import tomasMolina from "./images/jotate.jpg";
 function App() {
   return (
     <div className="container-lg">
-      <div className="row align-items-center">
+      <div className="row align-items-center  g-1">
         <div className="col">
-          <div className="paper">
-            <div className="row justify-content-md-center">
+          <div className="paper m-4">
+            <div className="row justify-content-md-center m-3">
                 <div className="col-9">
                   <IdentificationInfo name={name} dedication={dedication} yourImage={tomasMolina}/>
                 </div>

@@ -189,14 +189,7 @@ a:hover {
   border-bottom: 1px solid black;
 }
 
-html,
 body {
-  height: 100%;
-}
-
-body {
-  margin: 1%;
-  padding: 5%;
   font-family: "Ubuntu Mono", monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -205,34 +198,6 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
-}
-
-.justify__content__start {
-  justify-content: start;
-}
-
-.justify__content__end {
-  justify-content: end;
-}
-
-.justify__content__center {
-  justify-content: center;
-}
-
-.width__sm {
-  width: 34em;
-}
-
-.width__md {
-  width: 45px;
-}
-
-.width__lg {
-  width: 60px;
-}
-
-.width__xl {
-  width: 70px;
 }
 
 .text--black {
