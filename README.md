@@ -1,6 +1,9 @@
 # CV and Porfolio for Tomas Molina
 
-Published on github pages with link [Tomas Molina's CV](https://jtmlmass.github.io/cv-tomas-molina/)
+Published on Github pages with link [Tomas Molina's CV](https://jtmlmass.github.io/cv-tomas-molina/)
+To publish currrent project to Github Pages:
+
+### `npm run deploy`
 
 # Getting Started with Create React App
 
