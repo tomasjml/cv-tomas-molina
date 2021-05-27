@@ -2,8 +2,8 @@ import React from 'react';
 
 const CareerInfo = ({careerData}) => {
     return ( 
-        <div className="info">
-            <h3>Career Summary</h3>
+        <div className="info p-5">
+            <h3 className="text-center mb-3">Career Summary</h3>
             {careerData.map((job) => {
                 return (
                     <div key={job.position}>
