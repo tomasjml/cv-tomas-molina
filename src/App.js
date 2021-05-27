@@ -33,7 +33,7 @@ function App() {
                   <IdentificationInfo name={name} dedication={dedication} yourImage={tomasMolina}/>
                 </div>
             </div>
-            <div className="row justify-content-md-center p-2">
+            <div className="row justify-content-md-center">
                 <div className="col">'
                   <div className="row m-3">
                       <ProfileInfo info={profileDescription}/>
@@ -48,7 +48,7 @@ function App() {
                     <ExtraDetails detailsData={detailsData} />
                   </div>
                 </div>
-                <div className="col m-3">
+                <div className="col">
                   <div className="row m-3">
                     <CareerInfo careerData={careerData}/>
                   </div>
