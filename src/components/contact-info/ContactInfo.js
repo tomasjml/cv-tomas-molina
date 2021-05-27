@@ -3,14 +3,24 @@ import React from 'react';
 const ContactInfo = ({contactData}) => {
     return (
         <div className="info">
-            <h2>How to reach me</h2>
-            <ul>
-                {Object.keys(contactData).map((dataKey) => {
-                    return(
-                        <li key={dataKey}>{dataKey}: {contactData[dataKey]}</li>
-                    )
-                })}
-            </ul>
+            <div className="row p-1 align-items-md-center">
+                <div className="col">
+                    <h2 className="text-center">How to reach me</h2>
+                </div>
+            </div>
+            <div className="row p-1">
+                <div className="col">
+                    <ul>
+                        {Object.keys(contactData).map((dataKey) => {
+                            return(
+                                <li className="text-capitalize" key={dataKey}>
+                                    <strong>{dataKey}:</strong> {contactData[dataKey]}
+                                </li>
+                            )
+                        })}
+                    </ul>
+                </div>
+            </div>
         </div>
     );
 }
