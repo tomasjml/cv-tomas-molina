@@ -1,5 +1,7 @@
 # CV and Porfolio for Tomas Molina
 
+Published on github pages with link [Tomas Molina's CV](https://jtmlmass.github.io/cv-tomas-molina/)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
