@@ -1,5 +1,6 @@
-import './App.css';
+import {useEffect} from "react";
 
+import './App.css';
 // Components
 import IdentificationInfo from "./components/identification-info/IdentificationInfo.js";
 import ProfileInfo from "./components/profile-info/ProfileInfo";
@@ -23,6 +24,10 @@ import {
 import tomasMolina from "./images/jotate.jpg";
 
 function App() {
+  useEffect(() => {
+    document.title = "Tomas' CV";
+  }, [])
+
   return (
     <div className="container-lg">
       <div className="row align-items-center">
