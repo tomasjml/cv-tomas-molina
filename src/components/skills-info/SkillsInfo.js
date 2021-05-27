@@ -2,8 +2,8 @@ import React from 'react';
 
 const SkillsInfo = ({codingData, frameData, passiveData}) => {
     return ( 
-        <div className="info">
-            <h3>Skills</h3>
+        <div className="info  p-4">
+            <h3 className="text-center">Skills</h3>
             <div className="row">
                 <div className="col">
                     <h5>Passive Skills</h5>
@@ -23,8 +23,10 @@ const SkillsInfo = ({codingData, frameData, passiveData}) => {
                     {frameData.map((data) => {
                         return (
                             <div key={data.language}>
-                                <label htmlFor={data.language}>{data.language}</label>
-                                <li name={data.language}>: {data.frameworks.join(", ")}</li>
+                                <label htmlFor={data.language}>
+                                    <strong>{data.language}</strong>
+                                </label>
+                                <li name={data.language}>{data.frameworks.join(", ")}</li>
                             </div>
                         );
                     })}
