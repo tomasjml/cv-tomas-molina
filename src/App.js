@@ -25,7 +25,7 @@ import tomasMolina from "./images/jotate.jpg";
 function App() {
   return (
     <div className="container-lg">
-      <div className="row align-items-center  g-1">
+      <div className="row align-items-center">
         <div className="col">
           <div className="paper m-4">
             <div className="row justify-content-md-center m-3">
@@ -33,26 +33,26 @@ function App() {
                   <IdentificationInfo name={name} dedication={dedication} yourImage={tomasMolina}/>
                 </div>
             </div>
-            <div className="row justify-content-md-center">
+            <div className="row justify-content-md-center p-2">
                 <div className="col">'
-                  <div className="row">
+                  <div className="row m-3">
                       <ProfileInfo info={profileDescription}/>
                   </div>
-                  <div className="row">
+                  <div className="row m-3">
                   <BirthInfo birthDate={birthDate} birthPlace={birthPlace}/>
                   </div>
-                  <div className="row">
+                  <div className="row m-3">
                     <SkillsInfo codingData={codingData.join(", ")} frameData={frameData} passiveData={passiveData.join(", ")}/>
                   </div>
-                  <div className="row">
+                  <div className="row m-3">
                     <ExtraDetails detailsData={detailsData} />
                   </div>
                 </div>
-                <div className="col">
-                  <div className="row">
+                <div className="col m-3">
+                  <div className="row m-3">
                     <CareerInfo careerData={careerData}/>
                   </div>
-                  <div className="row">
+                  <div className="row m-3">
                     <EducationalInfo educationalData={educationalData}/>
                   </div>
                 </div>
