@@ -24,24 +24,42 @@ import tomasMolina from "./images/jotate.jpg";
 
 function App() {
   return (
-    <div className="App container-lg">
-      <div className="paper">
-        <div className="paper__header">
-          <div class="row">
-            <IdentificationInfo name={name} dedication={dedication} yourImage={tomasMolina}/>
-          </div>
+    <div className="container-lg">
+      <div className="row align-items-center">
+        <div className="col">
+          <div className="paper">
+            <div className="row justify-content-md-center">
+                <div className="col-9">
+                  <IdentificationInfo name={name} dedication={dedication} yourImage={tomasMolina}/>
+                </div>
+            </div>
+            <div className="row justify-content-md-center">
+                <div className="col">'
+                  <div className="row">
+                      <ProfileInfo info={profileDescription}/>
+                  </div>
+                  <div className="row">
+                  <BirthInfo birthDate={birthDate} birthPlace={birthPlace}/>
+                  </div>
+                  <div className="row">
+                    <SkillsInfo codingData={codingData.join(", ")} frameData={frameData} passiveData={passiveData.join(", ")}/>
+                  </div>
+                  <div className="row">
+                    <ExtraDetails detailsData={detailsData} />
+                  </div>
+                </div>
+                <div className="col">
+                  <div className="row">
+                    <CareerInfo careerData={careerData}/>
+                  </div>
+                  <div className="row">
+                    <EducationalInfo educationalData={educationalData}/>
+                  </div>
+                </div>
+              </div>
+          </div>                                                  
         </div>
-        <div className="paper__body">
-          <div class="row">
-           <ProfileInfo info={profileDescription}/>
-          </div>
-          <BirthInfo birthDate={birthDate} birthPlace={birthPlace}/>
-          <SkillsInfo codingData={codingData.join(", ")} frameData={frameData} passiveData={passiveData.join(", ")}/>
-          <ExtraDetails detailsData={detailsData} />
-          <CareerInfo careerData={careerData}/>
-          <EducationalInfo educationalData={educationalData}/>
-        </div>
-      </div>                                                  
+      </div>
     </div>
   );
 }

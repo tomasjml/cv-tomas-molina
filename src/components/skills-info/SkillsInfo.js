@@ -2,7 +2,7 @@ import React from 'react';
 
 const SkillsInfo = ({codingData, frameData, passiveData}) => {
     return ( 
-        <div className="info info__secundary">
+        <div className="info">
             <h3>Skills</h3>
             <div className="row">
                 <div className="col">

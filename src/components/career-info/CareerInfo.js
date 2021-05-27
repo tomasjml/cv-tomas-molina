@@ -2,7 +2,7 @@ import React from 'react';
 
 const CareerInfo = ({careerData}) => {
     return ( 
-        <div className="info info__secundary">
+        <div className="info">
             <h3>Career Summary</h3>
             {careerData.map((job) => {
                 return (

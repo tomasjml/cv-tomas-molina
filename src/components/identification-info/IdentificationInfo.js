@@ -7,7 +7,7 @@ import {
 
 const IdentificationInfo = ({name, dedication, yourImage}) => {
     return (
-        <header className="info info__primary green-transparent justify-content-center">
+        <header className="info green-transparent justify-content-center">
             <div className="row">
                 <div className="col"> 
                     <img src={yourImage} alt={"A picture of: " + name} width="200" height="215" className="avatar"/>
