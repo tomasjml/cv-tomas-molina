@@ -4,7 +4,7 @@
   box-shadow:
       /* The top layer shadow */ 0 -1px 5px rgba(0, 0, 0, 0.15),
     /* The second layer */ 12px 20px 25px -5px var(--green-darker),
-    /* The second layer shadow */ 12px 12px 1px -4px rgba(0, 0, 0, 0.15);
+    /* The second layer shadow */ 12px 8px 1px 0px rgba(0, 0, 0, 0.15);
   /* Padding for demo purposes */
   /* padding: 1em; */
   border-color: var(--brown);

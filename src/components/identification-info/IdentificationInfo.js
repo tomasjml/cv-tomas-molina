@@ -13,7 +13,7 @@ const IdentificationInfo = ({name, dedication, yourImage}) => {
                     <img src={yourImage} alt={"A picture of: " + name}  className="avatar img-fluid img-thumbnail float-end w-100"/>
                 </div>
                 <div className="col col-7 m-3">
-                    <div className="mb-3">
+                    <div className="mb-4">
                         <div className="terminal text-center">
                             <h1 className="fs-2 p-2">{name}</h1>
                             <h1 className="fs-3 pb-2">{dedication}</h1>
