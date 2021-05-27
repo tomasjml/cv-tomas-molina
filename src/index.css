@@ -201,3 +201,7 @@ code {
 .text--black {
   color: black;
 }
+
+.wrapped {
+  word-wrap: break-word;
+}

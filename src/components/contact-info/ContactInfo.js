@@ -13,7 +13,7 @@ const ContactInfo = ({contactData}) => {
                     <ul>
                         {Object.keys(contactData).map((dataKey) => {
                             return(
-                                <li className="text-capitalize" key={dataKey}>
+                                <li className="text-capitalize wrapped" key={dataKey}>
                                     <strong>{dataKey}:</strong> {contactData[dataKey]}
                                 </li>
                             )
