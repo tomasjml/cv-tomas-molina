@@ -6,8 +6,7 @@ import tomasMolina from "../../images/jotate.jpg";
 
 import {
     name,
-    dedication,
-    contactData
+    dedication
 } from "../../data/DataCV";
 
 test('checks if name is right name', () => {
