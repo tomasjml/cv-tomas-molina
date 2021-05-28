@@ -1,8 +1,11 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
+import {
+  name
+} from "./data/DataCV";
 
 test('renders learn react link', () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
+  const linkElement = screen.getByText(new RegExp(name, "i"));
   expect(linkElement).toBeInTheDocument();
 });

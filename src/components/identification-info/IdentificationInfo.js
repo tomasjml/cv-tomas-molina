@@ -14,9 +14,10 @@ const IdentificationInfo = ({name, dedication, yourImage}) => {
                 </div>
                 <div className="col p-5">
                     <div className="mb-4">
-                        <div className="terminal text-center">
-                            <h1 className="fs-2 p-2">{name}</h1>
-                            <h1 className="fs-3 pb-2">{dedication}</h1>
+                        <div className="termin
+                        al text-center">
+                            <h1 id="name" data-testid="name" className="fs-2 p-2">{name}</h1>
+                            <h1 id="dedication" data-testid="dedication" className="fs-3 pb-2">{dedication}</h1>
                         </div>
                     </div>
                     <div className="mt-3">
