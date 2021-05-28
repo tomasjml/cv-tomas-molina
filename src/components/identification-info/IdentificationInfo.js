@@ -10,7 +10,7 @@ const IdentificationInfo = ({name, dedication, yourImage}) => {
         <header className="info green-transparent">
             <div className="row">
                 <div className="col p-5"> 
-                    <img src={yourImage} alt={"A picture of: " + name}  className="avatar img-fluid img-thumbnail float-end w-50"/>
+                    <img id="image" data-testid="image" src={yourImage} alt={"A picture of: " + name}  className="avatar img-fluid img-thumbnail float-end w-50"/>
                 </div>
                 <div className="col p-5">
                     <div className="mb-4">
